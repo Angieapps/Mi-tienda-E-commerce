@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+#filtros {
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.producto button,
+.carrito button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.carrito {
+  margin-top: 30px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: left;
+  display: inline-block;
+}
+
+.carrito button.vaciar {
+  background-color: #dc3545;
+  margin-top: 10px;
+}
