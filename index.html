@@ -1,34 +1,46 @@
-<h1>🛍️ Tienda de Angie Martinez - Marketing y Estrategia</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Angie</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-<!-- Filtro de categorías -->
-<div id="filtros">
-  <label for="categoria">Filtrar por categoría:</label>
-  <select id="categoria" onchange="filtrarPorCategoria()">
-    <option value="todos">Todos</option>
-    <option value="estrategias">Estrategias</option>
-    <option value="redes">Redes Sociales</option>
-    <option value="ventas">Publicidad y Ventas</option>
-  </select>
-</div>
+  <h1>🛍️ Tienda de Angie Martinez - Marketing y Estrategia</h1>
 
-<div id="productos"></div>
+  <!-- Filtro de categorías -->
+  <div id="filtros">
+    <label for="categoria">Filtrar por categoría:</label>
+    <select id="categoria" onchange="filtrarPorCategoria()">
+      <option value="todos">Todos</option>
+      <option value="estrategias">Estrategias</option>
+      <option value="redes">Redes Sociales</option>
+      <option value="ventas">Publicidad y Ventas</option>
+    </select>
+  </div>
 
-<div class="carrito">
-  <h2>🧾 Carrito de Compras</h2>
-  <ul id="lista-carrito"></ul>
-  <p><strong>Total: $<span id="total">0.00</span></strong></p>
-  <button class="vaciar" onclick="vaciarCarrito()">🧼 Vaciar Carrito</button>
-  <button class="finalizar" onclick="finalizarCompra()">✅ Finalizar Compra</button>
+  <div id="productos"></div>
 
-<div class="pago">
-      <h3>💳 Método de pago</h3>
-      <div id="paypal-button-container" style="margin-top: 10px; display: block;"></div>
-    </div>
-  </section>
+  <div class="carrito">
+    <h2>🧾 Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total: $<span id="total">0.00</span></strong></p>
+    <button class="vaciar" onclick="vaciarCarrito()">🧼 Vaciar Carrito</button>
+    <button class="finalizar" onclick="finalizarCompra()">✅ Finalizar Compra</button>
+  </div>
 
-  <!-- PayPal SDK (usa tu client-id real o de pruebas) -->
+  <div class="pago">
+    <h3>💳 Método de pago</h3>
+    <div id="paypal-button-container" style="margin-top: 10px; display: block;"></div>
+  </div>
+
+  <!-- PayPal SDK -->
   <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD&components=buttons,funding-eligibility"></script>
   <script src="script.js"></script>
+
 </body>
+</html>
 
 </html>
